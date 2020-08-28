@@ -12,11 +12,12 @@ def clean_data(dataset, target_index):
     return[labels, features]
 
 def get_labels_and_features(data):
+    uncleaned_len = len(data[1])
     count = 0
     ret = data
     features_array = []
     for i in range(len(data)):
-        for j in range(len(data[1])):
+        for j in range(uncleaned_len):
             if ret[i][j] == 'M': 
                 ret[i][j] = 1
                 features_array.append(1)
@@ -25,6 +26,6 @@ def get_labels_and_features(data):
                 features_array.append(0)
             else:
                 ret[i][j] = float(ret[i][j]);
-        # ret[i].pop(0)
-        # ret[i].pop(0)
+        ret[i].pop(0)
+        ret[i].pop(0)
     return [ret, features_array]
