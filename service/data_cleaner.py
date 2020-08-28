@@ -1,7 +1,7 @@
 import csv
 
 def clean_data(dataset, target_index):
-    with open('datasets/'+dataset, 'r') as infile:
+    with open('service/'+dataset, 'r') as infile:
         csvreader = csv.reader(infile)
         feature_names = next(csvreader)
         data = [row for row in csvreader]
