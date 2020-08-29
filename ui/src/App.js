@@ -43,7 +43,7 @@ class App extends Component {
   handleDiagnoseClick = (event) => {
     const formData = this.state.formData;
     this.setState({ isLoading: true });
-    fetch('http://127.0.0.1:5000/diagnose/', // changed to diagnose
+    fetch('http://127.0.0.1:5000/diagnosis/', 
       {
         headers: {
           'Accept': 'application/json',
@@ -88,8 +88,8 @@ class App extends Component {
 
     return (
       
-      <Container>
-        <div>
+      <Container className = "backGround">
+        <div className="titleBox">
           <h1 className="title">Breast Cancer Cell Classifier</h1>
         </div>
         <div className="content">

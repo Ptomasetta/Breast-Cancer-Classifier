@@ -25,8 +25,6 @@ def clean_data(data):
                 y_array.append(0)
             else:
                 ret[i][j] = float(ret[i][j]);
-        # ret[i].pop(0)
-        # ret[i].pop(0)
         del ret[i][0:2]
         del ret[i][10:]
     print([ret[0]])

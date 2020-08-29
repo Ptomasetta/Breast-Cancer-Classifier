@@ -1,11 +1,19 @@
+html, body {
+  background: url('https://static.vecteezy.com/system/resources/previews/000/543/841/non_2x/blue-wave-surface-blockchain-technology-and-science-abstract-background-music-equalizer-of-hexagon-network-wire-frame-illumination-texture-pattern-new-technology-particle-digital-concept-wallpaper-vector.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
 .title {
-  padding-top: 100px;
+  padding-top: 150px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 4em;
   letter-spacing: 0.15rem;
-  color: black;
+  color: white;
 }
 
 .content {
