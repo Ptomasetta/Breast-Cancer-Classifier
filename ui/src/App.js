@@ -63,6 +63,22 @@ class App extends Component {
 
   handleResetClick = (event) => {
     this.setState({ result: "" });
+    this.setState({
+      isLoading: false,
+      formData: {
+        radius: '',
+        texture: '',
+        perimeter: '',
+        area: '',
+        smoothness: '',
+        compactness: '',
+        concavity: '',
+        concavepoints: '',
+        symmetry: '',
+        fractaldimensions: ''
+      },
+      result: ""
+    });
   }
 
   render() {
@@ -71,9 +87,10 @@ class App extends Component {
     const result = this.state.result;
 
     return (
+      
       <Container>
         <div>
-          <h1 className="title">Breast Cancer Tumor Classifier</h1>
+          <h1 className="title">Breast Cancer Cell Classifier</h1>
         </div>
         <div className="content">
           <Form>
@@ -177,7 +194,6 @@ class App extends Component {
               <Col>
                 <Button
                   block
-                  variant="success"
                   disabled={isLoading}
                   onClick={!isLoading ? this.handleDiagnoseClick : null}>
                   {isLoading ? 'Making diagnosis' : 'Diagnose'}
@@ -186,10 +202,9 @@ class App extends Component {
               <Col>
                 <Button
                   block
-                  variant="danger"
                   disabled={isLoading}
                   onClick={this.handleResetClick}>
-                  Reset Diagnosis
+                  Reset
                 </Button>
               </Col>
             </Row>
