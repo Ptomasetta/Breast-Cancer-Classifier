@@ -15,7 +15,7 @@ x = data[0] # M -> 1, B -> 0
 y = data[1]
 
 # Split the dataset into training (50%) and testing (50%)
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=.5)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=.8)
 
 # Build the classifier and make prediction
 classifier = tree.DecisionTreeClassifier()
