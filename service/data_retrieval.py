@@ -1,7 +1,7 @@
 import csv
 
 def retrieve_data():
-    with open('service/cancer-data.csv', 'r') as infile:
+    with open('cancer-data.csv', 'r') as infile:
         csvreader = csv.reader(infile)
         next(csvreader)
         data = [row for row in csvreader]
@@ -27,5 +27,4 @@ def clean_data(data):
                 ret[i][j] = float(ret[i][j]);
         del ret[i][0:2]
         del ret[i][10:]
-    print([ret[0]])
     return [ret, y_array]
