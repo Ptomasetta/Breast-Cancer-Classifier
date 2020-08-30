@@ -88,11 +88,11 @@ class App extends Component {
 
     return (
       
-      <Container className = "backGround">
-        <div className="titleBox">
-          <h1 className="title">Breast Cancer Cell Classifier</h1>
+      <Container>
+        <div>
+          <h1 className="title-container">Breast Cancer Cell Classifier</h1>
         </div>
-        <div className="content">
+        <div className="content-container">
           <Form>
             <Form.Row>
               <Form.Group as={Col}>
