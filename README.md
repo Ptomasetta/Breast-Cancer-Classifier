@@ -1,4 +1,4 @@
 # Breast-Cancer-Classifier
-Classifier for malignant breast cancer tumors using the Breast Cancer Wisconsin (Diagnostic) Data Set
+Classifier of cancerous breast tumors using the cell data from the Breast Cancer Wisconsin (Diagnostic) Data Set
 
-https://www.kaggle.com/uciml/breast-cancer-wisconsin-data
+[I'm an inline-style link](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
