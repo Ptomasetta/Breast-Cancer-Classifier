@@ -5,7 +5,7 @@ Classifier of cancerous breast tumors using cell data from the Breast Cancer Wis
 
 [Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
 
-![](interface.jpg)
+![](https://github.com/Ptomasetta/Breast-Cancer-Classifier/blob/master/Interface.jpg?raw=true)
 
 ## -Instructions to Run
 
